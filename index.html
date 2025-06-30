@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Rakesh-Para</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <script src="https://kit.fontawesome.com/011566f12c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets/images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="heading-text">
+                <p>Bridging Data and Development | Data Science & Java Full Stack</p>
+                <h1>Hi, I'm <span>Rakesh Para</span><br></h1>
+            </div>
+        </div>
+    </div>
+<!------------------------------ About ---------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./assets/images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Aspiring data scientist with a strong foundation in data analysis, statistical modeling, and machine learning. 
+                    Passionate about leveraging data-driven insights to solve complex problems and support strategic decision making. 
+                    Also skilled in Java full-stack development, including building end-to-end web applications using technologies like 
+                    Java, Spring Boot, and React. Seeking to contribute to innovative projects that blend data science and software development, 
+                    while continuously expanding my expertise in analytics, web development, and data visualization.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Training_&_Certifications')">Training & Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Science</span><br>Python, SQL, machine learning (Scikit-learn, TensorFlow), data visualization (Tableau, Power BI)</li>
+                        <li><span>Data-Base</span><br>SQL, MySQL, Oracle SQL 10g</li>
+                        <li><span>Java Full-Stack</span><br>Java,J2EE,Hibernate,Springs, HTML, CSS, JavaScript, ReactJS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                     <li>
+                         <strong>Automated Visual Inspection Using Deep Learning</strong><br>
+                         <span>May 2025 – Present</span><br>
+                         <em>Summer Intern – IIT Bombay</em>
+                         <ul>
+                             <li>Collaborated with Prof. Indrajit Mukherjee on a machine learning-based visual inspection project focused on quality control in manufacturing using the MVTec AD dataset.</li>
+                             <li>Developed and evaluated deep learning models (CNNs) for anomaly detection, designed preprocessing pipelines for variable imaging conditions, and addressed class imbalance in multiclass classification.</li>
+                         </ul>
+                     </li>
+                   </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>M.Sc.(Data Science)</span><br>In the year 2024-Present <br> From GITAM Univeristy </li>
+                        <li><span>B.Sc.(Statstics, Computer Science, Mathematics)</span><br>In the year 2019-2022 <br> From The Oxford College of science <br> under Bangalore university </li>
+                        <li><span>P.U.C/12<sup>th</sup></span><br>In the year 2017-2019 <br> From Krupanidhi PU college<br> under P.U Board</li>
+                        <li><span>10<sup>th</sup></span><br>In the year 2017 <br> From Bhashyam High School<br> under AP SSC Board</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Training_&_Certifications">
+                    <ul>
+                        <li><span>Java Full Stack Development – Jspiders Training Institute, Hyderabad</span><br> Mar 2023 – Dec 2023</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------ Projects ---------------------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-file-code"></i>
+                <h2>Storytelling Data Visualization on Exchange Rates</h2>
+                <p>Developed an interactive data visualization analyzing exchange rate trends from 1999 to 2020 using Pandas and
+                   NumPy for data processing.
+                   Applied time-series analysis and statistical methods to uncover key insights, visualizing currency fluctuations with
+                   Matplotlib and Seaborn.
+                   Focused on intuitive data storytelling to enhance user experience with interactive visualizations presenting
+                   complex financial data clearly.
+                </p>
+                <strong><a href="https://github.com/rakeshpara/Storytelling_Data_Visualization_on_Exchange_Rates/blob/main/Storytelling_Data_Visualization_on_Exchange_Rates.ipynb">Project Link</a></strong>
+            </div>
+            <!-- <div>
+                <i class="fa-duotone fa-code"></i>
+                <h2>Laundry Management System Project</h2>
+                <p>In an automated setting, the Laundry Management system allows the laundry and dry-cleaning firm to handle dayto¬day operations, orders, processes, billing, and delivery management.
+                </p>
+                <a href="#">learn more</a>
+            </div> -->
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Traffic Analysis on I-94 Interstate</h2>
+                <p>Performed exploratory data analysis on highway traffic volume near Minneapolis–St. Paul, focusing on time-based
+                   and weather-related patterns.<br>
+                   Identified key factors influencing heavy traffic: rush hours, weekdays, seasonal changes, and weather conditions.<br>
+                   Utilized Python (Pandas, Matplotlib) to analyze correlations, visualize trends, and present actionable insights for
+                   data-driven decision-making.<br>
+
+                </p>
+                <strong><a href="https://github.com/rakeshpara/Indicators-of-Heavy-Traffic-on-I-94/blob/main/Indicators_of_Heavy_Traffic_on_I_940_Interstate.ipynb">Project Link</a></strong>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------- portfolio --------------------------------------
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./assets/images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>The app connects you to talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./assets/images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p>The app connects you to talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./assets/images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div> -->
+<!-- --------------------------------contact---------------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> rakeshpara313@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8497943569</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/para-rakesh-16ra12ju"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rakeshpara"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/rakesh__para"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./assets/images/PARA_RAKESH_resume.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email id" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Para Rakesh. Licensed under the <a href="LICENSE.md">MIT License</a>.</p>
+    </div>
+</div>
+  <!-- <script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzdOfqfqLAV6fCHGT9UP-DPzBZGkTQDrJ-0OhHxkXs4VbwjKW2acOegkRNHv5eF2nGZiA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> -->
+</body>
+</html>
